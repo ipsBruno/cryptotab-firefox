@@ -1,0 +1,29 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "icons/icon_default.png",
+      "default_title": "CryptoTab"
+   },
+   "content_security_policy": "script-src 'self' https://vk.com/js/api/openapi.js blob: 'unsafe-eval';object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_ext_description__",
+   "icons": {
+      "128": "icons/icon-128px.png",
+      "16": "icons/icon-16px.png",
+      "256": "icons/icon-256px.png",
+      "32": "icons/icon-32px.png",
+      "48": "icons/icon-96px.png"
+   },
+   "applications": {
+      "gecko": {
+         "id": "cryptotab-ff@cryptotab.net",
+         "strict_min_version": "45.0"
+      }
+   },
+   "manifest_version": 2,
+   "name": "CryptoTab",
+   "permissions": [ "storage", "activeTab", "<all_urls>", "tabs", "contextMenus", "management", "notifications", "webRequest", "webRequestBlocking" ],
+   "version": "1.6.0"
+}
